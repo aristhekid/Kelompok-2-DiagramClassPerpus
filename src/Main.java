@@ -7,6 +7,12 @@ public class Main {
         buku1.genreBuku.add(genre1);
         buku1.tambahBuku();
 
+        // Inheritance: Bukudigital turunan dari Buku
+        BukuDigital ebook1 = new BukuDigital(102, "Pemrograman Java Dasar", "Pak Dosen", 4.5, "PDF");
+        ebook1.genreBuku.add(genre1);
+        ebook1.tambahBuku();
+        ebook1.unduhBuku();
+
         Member m1 = new Member(1, "Rusdi", 20);
         m1.pinjamBuku(buku1);
         m1.kembalikanBuku(buku1);
