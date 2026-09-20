@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Buku {
+public abstract class Buku {
     int id_buku;
     String judul;
     String author;
@@ -20,4 +20,6 @@ public class Buku {
         this.judul = judulBaru;
         System.out.println("Buku diupdate.");
     }
+
+    public abstract void infoBuku();
 }
